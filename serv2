@@ -1,0 +1,22 @@
+#!/bin/python3
+
+import subprocess
+import argparse
+
+def run_command(command):
+    try:
+        subprocess.run(command, shell=True, check=True)
+    except subprocess.CalledProcessError as e:
+        print(f"Error executing command: {e}")
+
+def main():
+    parser = argparse.ArgumentParser(description="Start a simple HTTP server on a specified port.")
+    parser.add_argument("port", type=int, help="Port number to serve on")
+    args = parser.parse_args()
+    
+    print(f"[+] Serving it up on {args.port}")
+    run_command(f"python3 -m http.server {args.port}")
+
+if __name__ == "__main__":
+    main()
+
