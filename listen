@@ -1,0 +1,24 @@
+#!/usr/bin/env python3
+
+import subprocess
+import argparse
+
+def run_command(command):
+    try:
+        subprocess.run(command, shell=True, check=True)
+    except subprocess.CalledProcessError as e:
+        print(f"Error executing command: {e}")
+
+def main():
+    parser = argparse.ArgumentParser(description="Start nc listener with rlwrap")
+    parser.add_argument("port", type=int, help="Port to listen on")
+    args = parser.parse_args()
+    
+    print(f"[+] Starting NC listener on {args.port}")
+    print(f"[**] Pimp your shell with : python3 -c 'import pty;pty.spawn(\"/bin/bash\")'")
+    print(f"[**] export TERM=xterm")
+    run_command(f"rlwrap nc -nlvp {args.port}")
+
+
+if __name__ == "__main__":
+    main()

