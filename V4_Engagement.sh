@@ -169,7 +169,7 @@ EOF
 
 
 sudo apt-get install snmp-mibs-downloader
-download-mibs 
+sudo download-mibs 
 echo '************* -> comment the line saying "mibs :" in /etc/snmp/snmp.conf <- **************'
 
 ### Firefox decrypt for extracting firefox or thunderbird information ###
