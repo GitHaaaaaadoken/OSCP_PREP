@@ -21,7 +21,12 @@ mkdir OSCP/GeneralEnumeration
 
 
 
-# Copy files 
+# Copy files, the linpeas directory changes depending on where kali has it install, which is annoying...
+sudo apt install peass
+
+cp /usr/share/peass/winpeas/* OSCP/windows/escalation
+
+cp /usr/share/peass/linpeas/* OSCP/linux/escalation
 
 cp /usr/share/windows-resources/PEASS-ng/winPEAS/winPEASexe/binaries/winPEASx64.exe OSCP/windows/escalation
 
