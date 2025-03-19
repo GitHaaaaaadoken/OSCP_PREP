@@ -28,10 +28,6 @@ cp /usr/share/peass/winpeas/* OSCP/windows/escalation
 
 cp /usr/share/peass/linpeas/* OSCP/linux/escalation
 
-cp /usr/share/windows-resources/PEASS-ng/winPEAS/winPEASexe/binaries/winPEASx64.exe OSCP/windows/escalation
-
-cp /opt/winpeas/winPEASany.exe OSCP/windows/escalation/
-
 cp /usr/share/windows-resources/binaries/nc.exe OSCP/windows/
 
 cp /usr/share/windows-resources/mimikatz/x64/mimikatz.exe OSCP/windows/
@@ -43,10 +39,6 @@ cp /usr/share/windows-resources/powersploit/Recon/PowerView.ps1 OSCP/windows/AD/
 cp /usr/share/powershell-empire/empire/server/data/module_source/management/powercat.ps1 OSCP/windows/PowerShell/
 
 cp /usr/share/windows-resources/powersploit/Privesc/PowerUp.ps1 OSCP/windows/PowerShell/
-
-cp /usr/share/windows-resources/PEASS-ng/linPEAS/linpeas.sh OSCP/linux/escalation/
-
-cp /opt/linpeas/linpeas.sh OSCP/linux/escalation/
 
 cp /usr/bin/unix-privesc-check OSCP/linux/escalation/
 
