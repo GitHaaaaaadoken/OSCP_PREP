@@ -18,3 +18,8 @@ port extractor is something I made for pulling out all of the ports after runnin
 
 ## SERV2
 serv2 is another python script used for setting up a python3 http server. I was getting tired of typing python3 -m http.server 80...now its just serv2 80 :) Anotha one to add to your /usr/bin folder for ease of use. 
+
+## Download.ps1
+Simple powershell script, allows you to download 3 files with a single invoke web request. Does some verification and if any errors arise, prints them in red. 
+
+
